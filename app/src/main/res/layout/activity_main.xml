@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_actividad1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.imanol.examen1_app_apm_riveroronquilloomarimanol_6im8.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="313dp"
+        android:layout_height="49dp"
+        android:text="Cantidad en pesos mexicanos"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        tools:ignore="HardcodedText,MissingConstraints"
+        android:layout_marginBottom="93dp"
+        android:layout_above="@+id/entrada"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/entrada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="$MXN"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="99dp"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteY="178dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="106dp"
+        android:layout_height="53dp"
+        android:text="Convertir"
+        android:onClick="onClickConvertir"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="326dp"
+        tools:ignore="HardcodedText,MissingConstraints"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="126dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="20dp"
+        tools:layout_editor_absoluteX="0dp" />
+</RelativeLayout>
